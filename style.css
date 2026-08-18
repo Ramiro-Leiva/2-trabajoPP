@@ -1,47 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabajo practico 2</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Listado</h1>
-    <div>
-        <h1> Mis Poductos</h1>
-        <label for="Producto">Ordenar Por</label>
-            <select id="Producto" name="Productos">
-            <option value="id">Id</option>
-            <option value="nombre">Nombre</option>
-            <option value="sku">SKU</option>
-            <option value="sku">Descripcion</option>
-            <option value="sku">Precio</option>
-            <option value="sku">Stock</option>
-            <option value="sku">Estado</option>
-            <option value="sku">Fecha de Registro</option>
-            <option value="sku">Categoria</option>
-            <option value="sku">Marca</option>
-        </select>
-    </div>
-    <table>
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Nombre</th>
-                <th>SKU</th>
-                <th>Descripcion</th>
-                <th>Precio</th>
-                <th>Stock</th>
-                <th>Estado</th>
-                <th>Fecha de Registro</th>
-                <th>Categoria</th>
-                <th>Marca</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-        </tbody>
-    </table>
-</body>
-</html>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f6f9;
+  color: #333;
+}
+
+h1 {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 15px 20px;
+  border-radius: 8px 8px 0 0;
+  border-bottom: 2px solid #eef2f7;
+}
+
+div h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #34495e;
+}
+
+/* Estilo para mejorar la apariencia del select */
+select {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
+}
+
+th {
+  background-color: #f8f9fa;
+  color: #555;
+  font-size: 13px;
+  text-align: left;
+  border-bottom: 2px solid #eef2f7;
+}
+
+/* Espaciado uniforme para encabezados y celdas de datos */
+th, td {
+  padding: 12px 10px;
+}
